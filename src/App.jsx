@@ -12,6 +12,7 @@ import CartPage from "./Components/Pages/CartPage";
 import CheckoutPage from "./Components/Pages/CheckoutPage";
 import OrderConfirmationPage from "./Components/Pages/OrderConfirmationPage";
 import ProductDetailPage from "./Components/Pages/ProductDetailPage";
+import ContactPage from "./Components/Pages/ContactPage";
 
 function App() {
     const [products, setProducts] = useState([]);
@@ -114,6 +115,7 @@ function App() {
                     path="/checkout/confirmation"
                     element={<OrderConfirmationPage />}
                 />
+                <Route path="/contact" element={<ContactPage />} />
             </Routes>
         </BrowserRouter>
     );

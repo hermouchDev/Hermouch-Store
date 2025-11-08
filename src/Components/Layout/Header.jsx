@@ -15,8 +15,11 @@ const Header = ({ totalItems }) => {
             <li className="nav-item me-lg-4">
               <NavLink to="/" end className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`} style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)' }}>Home</NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item me-lg-4">
               <NavLink to="/shop" className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`} style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)' }}>Shop</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink to="/contact" className={({isActive}) => `nav-link ${isActive ? 'active' : ''}`} style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)' }}>Contact</NavLink>
             </li>
           </ul>
           <ul className="navbar-nav ms-auto">
@@ -38,5 +41,3 @@ const Header = ({ totalItems }) => {
 };
 
 export default Header;
-
-
