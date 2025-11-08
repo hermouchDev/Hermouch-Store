@@ -84,9 +84,6 @@ const CartPage = ({
             >
                 <div className="container d-flex flex-column gap-3 px-3 px-md-4 py-3 py-md-4 flex-sm-row align-items-sm-center justify-content-sm-between">
                         <div>
-                            <p className="text-uppercase small text-secondary mb-1" style={{ fontSize: "clamp(0.7rem, 2vw, 0.875rem)" }}>
-                                atelier
-                            </p>
                             <h1
                                 className="mt-1 display-6 fw-bold text-uppercase"
                                 style={{
