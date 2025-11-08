@@ -1,0 +1,209 @@
+[
+    {
+        "id": 1,
+        "name": "HERMOUCH Oversized T-Shirt – Black",
+        "price": 180,
+        "description": "Premium oversized T-shirt with the gold HERMOUCH logo. Soft cotton, minimalist design for a luxury streetwear look.",
+        "image": "/images/product1.png",
+        "image2": "/images/product1-2.png",
+        "sizes": ["XS", "S", "L", "M", "XL", "XXL"],
+        "type" : "T-SHIRT"
+    },
+    {
+        "id": 2,
+        "name": "HERMOUCH Sneakers – white & Gold",
+        "price": 319,
+        "description": "neakers – white and black color mix, golden “HERMOUCH” logo on the side",
+        "image": "/images/product11.png",
+        "image2": "/images/product11-2.png",
+        "sizes": ["38", "39", "40", "41", "42", "43", "44"],
+        "type" : "SNEAKERS"
+    },
+    {
+        "id": 3,
+        "name": "HERMOUCH Hoodie – Beige Edition",
+        "price": 249,
+        "description": "Cozy beige hoodie with embroidered HERMOUCH logo. Clean, modern fit ideal for everyday wear.",
+        "image": "/images/product4.png",
+        "image2": "/images/product4-2.png",
+        "sizes": ["XS", "S", "L", "M", "XL", "XXL"],
+        "type" : "HOODIE"
+    },
+    {
+        "id": 4,
+        "name": "HERMOUCH Jacket – warm winter jacket - Green",
+        "price": 329,
+        "description": "Jacket – warm winter jacket (puffer or bomber), in green with subtle gold logo",
+        "image": "/images/product16.png",
+        "image2": "/images/product16-2.png",
+        "sizes": ["XS", "S", "L", "M", "XL", "XXL"],
+        "type" : "OUTERWEAR"
+    },
+    {
+        "id": 5,
+        "name": "HERMOUCH Oversized T-Shirt – Beige",
+        "price": 189,
+        "description": "Minimal oversized beige T-shirt with black HERMOUCH logo. Made for style and comfort.",
+        "image": "/images/product3.png",
+        "image2": "/images/product3-2.png",
+        "sizes": ["XS", "S", "L", "M", "XL", "XXL"],
+        "type" : "T-SHIRT"
+    },
+    {
+        "id": 6,
+        "name": "HERMOUCH Class Pant – White",
+        "price": 229,
+        "description": "Comfortable White class with subtle HERMOUCH branding. Pair them with your favorite hoodie for a full look.",
+        "image": "/images/product15.png",
+        "image2": "/images/product15-2.png",
+        "sizes": ["29", "30", "31", "32", "33", "34"],
+        "type" : "PANTS"
+    },
+    {
+        "id": 7,
+        "name": "HERMOUCH Cap – Black Gold Logo",
+        "price": 119,
+        "description": "Classic black cap embroidered with HERMOUCH gold logo. Adjustable fit and premium finish.",
+        "image": "/images/product7.png",
+        "image2": "/images/product7-2.png",
+        "type" : "CAP"
+    },
+    {
+        "id": 8,
+        "name": "HERMOUCH Hoodie – Black Gold Edition",
+        "price": 260,
+        "description": "Premium black hoodie featuring the signature gold HERMOUCH logo. Designed for luxury and simplicity.",
+        "image": "/images/product8.png",
+        "image2": "/images/product8-2.png",
+        "sizes": ["XS", "S", "L", "M", "XL", "XXL"],
+        "type" : "HOODIE"
+    },
+    {
+        "id": 9,
+        "name": "HERMOUCH Cap – Green Gold Logo",
+        "price": 139,
+        "description": "Classic Green cap embroidered with HERMOUCH gold logo. Adjustable fit and premium finish.",
+        "image": "/images/product13.png",  
+        "image2": "/images/product13-2.png",  
+        "type" : "CAP"
+    },
+    {
+        "id": 10,
+        "name": "HERMOUCH Sweatshirt – Black Edition",
+        "price": 200,
+        "description": "Black crewneck sweatshirt with front white logo. A timeless piece for a clean streetwear style.",
+        "image": "/images/product10.png",
+        "image2": "/images/product10-2.png",
+        "sizes": ["XS", "S", "L", "M", "XL", "XXL"],
+        "type" : "SWEATSHIRT"
+    },
+    {
+        "id": 11,
+        "name": "HERMOUCH Sneakers – Black & Gold",
+        "price": 249,
+        "description": "Stylish streetwear sneakers featuring black and white contrast with gold accents. Perfect mix of comfort and luxury.",
+        "image": "/images/product6.png",
+        "image2": "/images/product6-2.png",
+        "sizes": ["38", "39", "40", "41", "42", "43", "44"],
+        "type" : "SNEAKERS"
+    },
+    {
+        "id": 12,
+        "name": "HERMOUCH Cap – Beige Gold Logo",
+        "price": 139,
+        "description": "Classic Beige cap embroidered with HERMOUCH gold logo. Adjustable fit and premium finish.",
+        "image": "/images/product12.png",
+        "image2": "/images/product12-2.png",
+        "type" : "CAP"
+    },
+    {
+        "id": 13,
+        "name": "HERMOUCH Jogger Pant – Black",
+        "price": 229,
+        "description": "Comfortable black jogger with subtle HERMOUCH branding. Pair them with your favorite hoodie for a full look.",
+        "image": "/images/product9.png",
+        "image2": "/images/product9-2.png",
+        "sizes": ["29", "30", "31", "32", "33", "34"],
+        "type" : "PANTS"
+    },
+    {
+        "id": 14,
+        "name": "HERMOUCH Jogger Pant – Beige",
+        "price": 229,
+        "description": "Comfortable Beige jogger with subtle HERMOUCH branding. Pair them with your favorite hoodie for a full look.",
+        "image": "/images/product14.png",
+        "image2": "/images/product14-2.png",
+        "sizes": ["29", "30", "31", "32", "33", "34"],
+        "type" : "PANTS"
+    },
+    {
+        "id": 15,
+        "name": "HERMOUCH Oversized T-Shirt – White",
+        "price": 179,
+        "description": "Essential white T-shirt with black logo print. Perfect staple piece for your streetwear collection.",
+        "image": "/images/product2.png",
+        "image2": "/images/product2-2.png",
+        "sizes": ["XS", "S", "L", "M", "XL", "XXL"],
+        "type" : "T-SHIRT"
+    },
+    {
+        "id": 16,
+        "name": "HERMOUCH Hoodie – Forest Green",
+        "price": 249,
+        "description": "Heavy cotton hoodie in deep green tone, featuring the white HERMOUCH logo. Luxury meets urban comfort.",
+        "image": "/images/product5.png",
+        "image2": "/images/product5-2.png",
+        "sizes": ["XS", "S", "L", "M", "XL", "XXL"],
+        "type" : "HOODIE"
+    },
+    {
+        "id": 17,
+        "name": "Jacket – warm winter jacket - Beige",
+        "price": 329,
+        "description": "Jacket – warm winter jacket (puffer or bomber), in Beige with subtle gold logo",
+        "image": "/images/product17.png",
+        "image2": "/images/product17-2.png",
+        "sizes": ["XS", "S", "L", "M", "XL", "XXL"],
+        "type" : "OUTERWEAR"
+    },
+    {
+        "id": 18,
+        "name": "HERMOUCH Hoodie – Cream White Edition",
+        "price": 249,
+        "description": "Premium Cream hoodie featuring the signature White HERMOUCH logo. Designed for luxury and simplicity.",
+        "image": "/images/product18.png",
+        "image2": "/images/product18-2.png",
+        "sizes": ["XS", "S", "L", "M", "XL", "XXL"],
+        "type" : "HOODIE"
+    },
+    {
+        "id": 19,
+        "name": "HERMOUCH Sneakers – Blue & Gold",
+        "price": 319,
+        "description": "neakers – Blue and White color mix, golden “HERMOUCH” logo on the side",
+        "image": "/images/product19.png",
+        "image2": "/images/product19-2.png",
+        "sizes": ["38", "39", "40", "41", "42", "43", "44"],
+        "type" : "SNEAKERS"
+    },
+    {
+        "id": 20,
+        "name": "HERMOUCH Sweatshirt – Beige Edition",
+        "price": 200,
+        "description": "Beige crewneck sweatshirt with front Cream logo. A timeless piece for a clean streetwear style.",
+        "image": "/images/product20.png",
+        "image2": "/images/product20-2.png",
+        "sizes": ["XS", "S", "L", "M", "XL", "XXL"],
+        "type" : "SWEATSHIRT"
+    },
+    {
+        "id": 21,
+        "name": "HERMOUCH Sweatshirt – Green Edition",
+        "price": 200,
+        "description": "Green crewneck sweatshirt with front white logo. A timeless piece for a clean streetwear style.",
+        "image": "/images/product21.png",
+        "image2": "/images/product21-2.png",
+        "sizes": ["XS", "S", "L", "M", "XL", "XXL"],
+        "type" : "SWEATSHIRT"
+    }
+]
