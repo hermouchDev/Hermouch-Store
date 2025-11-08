@@ -1,6 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ProductListPage = ({ products, addItem }) => {
+    const navigate = useNavigate();
+
+    const handleAddToCart = (product) => {
+        if (product.sizes && product.sizes.length > 0) {
+            alert("Please select a size. Redirecting to product page...");
+            navigate(`/product/${product.id}`);
+            return;
+        }
+        addItem(product);
+    };
+
     return (
         <div>
         <div className="container px-0">
@@ -30,7 +41,7 @@ const ProductListPage = ({ products, addItem }) => {
                         <div className="px-2 px-md-3 px-lg-4 pb-2 pb-md-3 pb-lg-4 mt-auto">
                             <div className="d-flex gap-1 gap-md-2">
                                 <Link to={`/product/${product.id}`} className="btn btn-outline-secondary rounded-pill w-50 py-1 py-md-2 text-decoration-none" style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)' }}>details</Link>
-                                <button type="button" className="btn btn-dark rounded-pill w-50 py-1 py-md-2" style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)' }} onClick={() => addItem(product)}>add</button>
+                                <button type="button" className="btn btn-dark rounded-pill w-50 py-1 py-md-2" style={{ fontSize: 'clamp(0.75rem, 2vw, 0.875rem)' }} onClick={() => handleAddToCart(product)}>add</button>
                             </div>
                         </div>          
                     </div>
