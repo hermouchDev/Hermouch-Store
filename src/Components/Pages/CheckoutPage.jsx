@@ -16,7 +16,7 @@ const CheckoutPage = ({ items, getTotalPrice }) => {
         cardNumber: "",
         expiration: "",
         cvc: "",
-        country: "United States",
+        country: "Morocco",
         zip: "",
         fullName: "",
         address: "",
@@ -485,20 +485,23 @@ const CheckoutPage = ({ items, getTotalPrice }) => {
                                                 onChange={handleInputChange}
                                                 aria-label="Country"
                                             >
-                                                <option value="United States">
-                                                    United States
+                                                <option value="Morocco">
+                                                    Morocco
                                                 </option>
                                                 <option value="Canada">
                                                     Canada
                                                 </option>
-                                                <option value="United Kingdom">
-                                                    United Kingdom
+                                                <option value="United States">
+                                                    United States
                                                 </option>
                                                 <option value="France">
                                                     France
                                                 </option>
                                                 <option value="Germany">
                                                     Germany
+                                                </option>
+                                                <option value="Korea">
+                                                    Korea
                                                 </option>
                                             </select>
                                         </div>
