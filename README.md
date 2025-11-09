@@ -75,10 +75,15 @@ hermouch-store/
 │   ├── Components/
 │   │   ├── Common/
 │   │   │   └── ScrollToTop.jsx
-│   │   ├── Layout/
+│   │   ├── Home/        # Homepage-specific sections
+│   │   │   ├── Hero.jsx
+│   │   │   ├── Featured.jsx
+│   │   │   ├── About.jsx
+│   │   │   └── Testimonials.jsx
+│   │   ├── Layout/      # Layout components (used across pages)
 │   │   │   ├── Header.jsx
 │   │   │   └── Footer.jsx
-│   │   ├── Pages/
+│   │   ├── Pages/       # Full page components
 │   │   │   ├── HomePage.jsx
 │   │   │   ├── ShopPage.jsx
 │   │   │   ├── ProductDetailPage.jsx
@@ -86,7 +91,7 @@ hermouch-store/
 │   │   │   ├── CheckoutPage.jsx
 │   │   │   ├── OrderConfirmationPage.jsx
 │   │   │   └── ContactPage.jsx
-│   │   └── Product/
+│   │   └── Product/     # Product-related components
 │   │       └── ProductListPage.jsx
 │   ├── App.jsx          # Main app component with routing
 │   ├── main.jsx         # Entry point
@@ -150,4 +155,3 @@ Built with modern React practices:
 ---
 
 © 2024 HERMOUCH. All rights reserved.
-
