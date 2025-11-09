@@ -57,7 +57,7 @@ function About() {
                                         <div>
                                             <h4 className="h6 fw-semibold mb-1" style={{ fontSize: "clamp(0.875rem, 2vw, 1rem)" }}>Free Shipping</h4>
                                             <p className="small mb-0" style={{ color: "#6D6556", fontSize: "clamp(0.75rem, 1.8vw, 0.875rem)" }}>
-                                                Over 200 DH
+                                                Over 300 DH
                                             </p>
                                         </div>
                                     </div>

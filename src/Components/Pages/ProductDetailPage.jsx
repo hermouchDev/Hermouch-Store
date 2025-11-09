@@ -160,7 +160,7 @@ const ProductDetailPage = ({ products, addItem }) => {
                                     style={{ color: "#6D6556" }}
                                 >
                                     <li className="mb-2 small" style={{ fontSize: "clamp(0.8rem, 2vw, 0.875rem)" }}>
-                                        ✓ Free shipping on orders over 200 DH
+                                        ✓ Free shipping on orders over 300 DH
                                     </li>
                                     <li className="mb-2 small" style={{ fontSize: "clamp(0.8rem, 2vw, 0.875rem)" }}>
                                         ✓ 30-day returns & exchanges

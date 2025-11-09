@@ -5,7 +5,8 @@ import { Link, useNavigate } from "react-router-dom";
 const CheckoutPage = ({ items, getTotalPrice }) => {
     const navigate = useNavigate();
     const totalPrice = getTotalPrice();
-    const shipping = 50;
+    // Free shipping on orders over 300 DH (or whatever amount you want)
+    const shipping = totalPrice >= 300 ? 0 : 50;
     const finalTotal = totalPrice + shipping;
 
     const [isProcessing, setIsProcessing] = useState(false);
