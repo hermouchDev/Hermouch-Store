@@ -101,7 +101,7 @@ function About() {
                     <div className="col-12 col-md-6">
                         <div className="position-relative rounded-3 rounded-md-4 overflow-hidden">
                             <img
-                                src="/images/about-image.png"
+                                src="/images/about-img.png"
                                 alt="About Hermouch"
                                 className="w-100"
                                 style={{
