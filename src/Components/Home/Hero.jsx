@@ -14,7 +14,10 @@ function Hero() {
                     minHeight: "230px",
                 }}
             >
-                <source src="/videos/brand-video.mp4" type="video/mp4" />
+                <source
+                    src={`${import.meta.env.BASE_URL}videos/brand-video.mp4`}
+                    type="video/mp4"
+                />
                 Your browser does not support the video tag.
             </video>
             <div

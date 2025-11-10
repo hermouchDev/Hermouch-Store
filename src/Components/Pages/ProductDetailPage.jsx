@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import Footer from "../Layout/Footer";
+import BlurHashImage from "../Common/BlurHashImage";
 
 const ProductDetailPage = ({ products, addItem }) => {
     const { id } = useParams();
@@ -68,13 +69,17 @@ const ProductDetailPage = ({ products, addItem }) => {
                             className="position-relative rounded-3 rounded-md-4 overflow-hidden"
                             style={{ backgroundColor: "rgba(255,255,255,0.7)" }}
                         >
-                            <img
+                            <BlurHashImage
                                 src={product.image2 || product.image}
                                 alt={product.name}
+                                blurHash={
+                                    product.image2
+                                        ? product.blurHash2
+                                        : product.blurHash
+                                }
                                 className="w-100"
                                 style={{
                                     aspectRatio: "4 / 5",
-                                    objectFit: "cover",
                                     minHeight: "300px",
                                 }}
                             />
@@ -84,7 +89,13 @@ const ProductDetailPage = ({ products, addItem }) => {
                     <div className="col-12 col-md-6">
                         <div className="d-flex flex-column h-100">
                             {product.category && (
-                                <p className="text-uppercase small text-secondary mb-2" style={{ fontSize: "clamp(0.75rem, 2vw, 0.875rem)" }}>
+                                <p
+                                    className="text-uppercase small text-secondary mb-2"
+                                    style={{
+                                        fontSize:
+                                            "clamp(0.75rem, 2vw, 0.875rem)",
+                                    }}
+                                >
                                     {product.category}
                                 </p>
                             )}
@@ -97,15 +108,21 @@ const ProductDetailPage = ({ products, addItem }) => {
                             >
                                 {product.name}
                             </h1>
-                            <p className="h4 mb-3 mb-md-4" style={{ color: "#1F1B16", fontSize: "clamp(1.25rem, 3vw, 1.75rem)" }}>
+                            <p
+                                className="h4 mb-3 mb-md-4"
+                                style={{
+                                    color: "#1F1B16",
+                                    fontSize: "clamp(1.25rem, 3vw, 1.75rem)",
+                                }}
+                            >
                                 {product.price.toLocaleString("en-GB")} DH
                             </p>
                             <p
                                 className="mb-3 mb-md-4"
-                                style={{ 
-                                    color: "#6D6556", 
+                                style={{
+                                    color: "#6D6556",
                                     lineHeight: "1.6",
-                                    fontSize: "clamp(0.875rem, 2vw, 1rem)"
+                                    fontSize: "clamp(0.875rem, 2vw, 1rem)",
                                 }}
                             >
                                 {product.description}
@@ -113,7 +130,13 @@ const ProductDetailPage = ({ products, addItem }) => {
 
                             {product.sizes && product.sizes.length > 0 && (
                                 <div className="mb-3 mb-md-4">
-                                    <h3 className="h6 fw-semibold mb-2 mb-md-3 text-uppercase small" style={{ fontSize: "clamp(0.75rem, 2vw, 0.875rem)" }}>
+                                    <h3
+                                        className="h6 fw-semibold mb-2 mb-md-3 text-uppercase small"
+                                        style={{
+                                            fontSize:
+                                                "clamp(0.75rem, 2vw, 0.875rem)",
+                                        }}
+                                    >
                                         Select Size
                                     </h3>
                                     <div className="d-flex flex-wrap gap-2">
@@ -130,8 +153,10 @@ const ProductDetailPage = ({ products, addItem }) => {
                                                     setSelectedSize(size)
                                                 }
                                                 style={{
-                                                    minWidth: "clamp(50px, 10vw, 60px)",
-                                                    fontSize: "clamp(0.75rem, 2vw, 0.875rem)",
+                                                    minWidth:
+                                                        "clamp(50px, 10vw, 60px)",
+                                                    fontSize:
+                                                        "clamp(0.75rem, 2vw, 0.875rem)",
                                                     transition: "all 0.2s",
                                                 }}
                                             >
@@ -159,13 +184,31 @@ const ProductDetailPage = ({ products, addItem }) => {
                                     className="list-unstyled mb-0"
                                     style={{ color: "#6D6556" }}
                                 >
-                                    <li className="mb-2 small" style={{ fontSize: "clamp(0.8rem, 2vw, 0.875rem)" }}>
+                                    <li
+                                        className="mb-2 small"
+                                        style={{
+                                            fontSize:
+                                                "clamp(0.8rem, 2vw, 0.875rem)",
+                                        }}
+                                    >
                                         ✓ Free shipping on orders over 300 DH
                                     </li>
-                                    <li className="mb-2 small" style={{ fontSize: "clamp(0.8rem, 2vw, 0.875rem)" }}>
+                                    <li
+                                        className="mb-2 small"
+                                        style={{
+                                            fontSize:
+                                                "clamp(0.8rem, 2vw, 0.875rem)",
+                                        }}
+                                    >
                                         ✓ 30-day returns & exchanges
                                     </li>
-                                    <li className="small" style={{ fontSize: "clamp(0.8rem, 2vw, 0.875rem)" }}>
+                                    <li
+                                        className="small"
+                                        style={{
+                                            fontSize:
+                                                "clamp(0.8rem, 2vw, 0.875rem)",
+                                        }}
+                                    >
                                         ✓ Premium quality guaranteed
                                     </li>
                                 </ul>

@@ -18,10 +18,34 @@ function App() {
     const [products, setProducts] = useState([]);
     const [items, setItems] = useState([]);
 
+    // useEffect(() => {
+    //     fetch("/products.json")
+    //         .then((r) => r.json())
+    //         .then(setProducts);
+    // }, []);
+
     useEffect(() => {
-        fetch("/products.json")
-            .then((r) => r.json())
-            .then(setProducts);
+        Promise.all([fetch("/products.json"), fetch("/blurhash-map.json")])
+            .then(([a, b]) => Promise.all([a.json(), b.json()]))
+            .then(([products, hashMap]) => {
+                const withBase = (p) =>
+                    `${import.meta.env.BASE_URL}${p.replace(/^\//, "")}`;
+                setProducts(
+                    products.map((p) => {
+                        const imgFile = p.image.split("/").pop();
+                        const img2File = p.image2
+                            ? p.image2.split("/").pop()
+                            : null;
+                        return {
+                            ...p,
+                            image: withBase(p.image),
+                            image2: p.image2 ? withBase(p.image2) : undefined,
+                            blurHash: hashMap[imgFile],
+                            blurHash2: img2File ? hashMap[img2File] : undefined,
+                        };
+                    })
+                );
+            });
     }, []);
 
     const addItem = (product) => {
@@ -89,7 +113,7 @@ function App() {
                             addItem={addItem}
                         />
                     }
-                /> 
+                />
                 <Route
                     path="/cart"
                     element={
