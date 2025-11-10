@@ -11,6 +11,7 @@ const ProductListPage = ({ products, addItem }) => {
             return;
         }
         addItem(product);
+        navigate(`/Cart`);
     };
 
     return (
