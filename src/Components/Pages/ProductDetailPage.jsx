@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import Footer from "../Layout/Footer";
 
 const ProductDetailPage = ({ products, addItem }) => {
     const { id } = useParams();
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
     const [selectedSize, setSelectedSize] = useState(null);
 
     const product = products.find((p) => p.id === parseInt(id));
@@ -37,7 +37,7 @@ const ProductDetailPage = ({ products, addItem }) => {
             ? { ...product, selectedSize, id: `${product.id}-${selectedSize}` }
             : { ...product, id: `${product.id}` };
         addItem(productToAdd);
-        // navigate("/cart");
+        navigate("/cart");
     };
 
     return (
