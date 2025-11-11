@@ -15,7 +15,7 @@ function Hero() {
                 }}
             >
                 <source
-                    src={`${import.meta.env.BASE_URL}videos/brand-video.mp4`}
+                    src={`${import.meta.env.BASE_URL}videos/hero-video.mp4`}
                     type="video/mp4"
                 />
                 Your browser does not support the video tag.
