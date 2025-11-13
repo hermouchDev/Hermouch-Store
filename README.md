@@ -100,6 +100,15 @@ hermouch-store/
 └── vite.config.js
 ```
 
+## 🖼️ Screenshot of the project
+
+![Hermouch Store](./images/hermouch store.jpg)
+
+## 🎥 Project demonstration
+
+[![Watch the video](./images/hermouch store.jpg)](https://www.linkedin.com/feed/update/urn:li:activity:7393926586078748672/)
+
+
 ## 🎨 Design Features
 
 - **Responsive Design**: Fully responsive across all device sizes
